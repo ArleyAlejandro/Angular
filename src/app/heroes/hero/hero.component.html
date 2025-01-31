@@ -1,0 +1,33 @@
+<!-- uso de la interpolacion para llamar a las propiedades de la clase diamicamente  -->
+<h1>{{name}}</h1>
+
+<dl>
+  <td>Nombre:</td>
+  <dd>{{name}}</dd>
+
+  <td>Edad:</td>
+  <dd>{{age}}</dd>
+
+  <td>Método:</td>
+  <dd>{{ getHeroDescription() }}</dd>
+
+  <td>Capitalizado:</td>
+  <dd>{{ capitalizeName }}</dd>
+</dl>
+
+<!-- (click)="changeHero()" detectar el click del boton -->
+<!--  *ngIf="name !== 'Hulk'" para eliminar el boton si el name ya ha cambiado -->
+<button *ngIf="name !== 'Hulk'" (click)="changeHero()" class="btn btn-primary mx-2">
+change name
+</button>
+
+<!--  *ngIf="age !== '80'" para eliminar el boton si el age ya ha cambiado -->
+<button *ngIf="age !== 80" (click)="changeAge()" class="btn btn-primary mx-2">
+change age
+</button>
+
+<button (click)="resetForm()" class="btn btn-primary mx-2">
+  Reset
+  </button>
+
+
