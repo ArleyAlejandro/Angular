@@ -29,7 +29,6 @@
             "polyfills": [
               "zone.js"
             ],
-             "baseHref": "/Angular/",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
