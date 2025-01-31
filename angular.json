@@ -29,7 +29,7 @@
             "polyfills": [
               "zone.js"
             ],
-            "baseHref": "/[nombre-del-repositorio]/",
+             "baseHref": "/Angular/",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
